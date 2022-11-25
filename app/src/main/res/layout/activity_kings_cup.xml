@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kings_cup_background"
+    tools:context=".KingsCupActivity">
+
+    <ImageView
+        android:id="@+id/cardImageView"
+        android:layout_width="348dp"
+        android:layout_height="611dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/card_back" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/rulesFloatingActionButton"
+        android:layout_width="49dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="4dp"
+        android:clickable="true"
+        app:backgroundTint="#00000000"
+        app:borderWidth="0dp"
+        app:elevation="0dp"
+        app:fabSize="auto"
+        app:hoveredFocusedTranslationZ="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maxImageSize="25dp"
+        app:pressedTranslationZ="6dp"
+        app:rippleColor="#00FFFFFF"
+        app:srcCompat="@drawable/info" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Click to view the rules"
+        android:textAlignment="textEnd"
+        android:textColor="#F7000000"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toStartOf="@+id/rulesFloatingActionButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/infoImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rules_kings_cup"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/startTextView"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#090808"
+        android:text="CLICK TO START THE GAME"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/cardImageView"
+        app:layout_constraintEnd_toEndOf="@+id/cardImageView"
+        app:layout_constraintStart_toStartOf="@+id/cardImageView"
+        app:layout_constraintTop_toTopOf="@+id/cardImageView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

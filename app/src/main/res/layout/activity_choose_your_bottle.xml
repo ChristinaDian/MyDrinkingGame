@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/white_bricks_2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chooseYourBottle">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="cursive"
+        android:text="Here you can choose your bottle:"
+        android:textAlignment="center"
+        android:textColor="#CB000000"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/bombayImageView"
+                android:layout_width="134dp"
+                android:layout_height="165dp"
+                android:clickable="true"
+                app:srcCompat="@drawable/bombay" />
+
+            <ImageView
+                android:id="@+id/absolutImageView"
+                android:layout_width="134dp"
+                android:layout_height="165dp"
+                android:clickable="true"
+                app:srcCompat="@drawable/absolut" />
+
+            <ImageView
+                android:id="@+id/smirnoffImageView"
+                android:layout_width="134dp"
+                android:layout_height="165dp"
+                android:clickable="true"
+                app:srcCompat="@drawable/smirnoff" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/yagerImageView"
+                android:layout_width="134dp"
+                android:layout_height="165dp"
+                android:clickable="true"
+                app:srcCompat="@drawable/yager" />
+
+            <ImageView
+                android:id="@+id/jackImageView"
+                android:layout_width="134dp"
+                android:layout_height="165dp"
+                android:clickable="true"
+                app:srcCompat="@drawable/jack" />
+
+            <ImageView
+                android:id="@+id/beerImageView"
+                android:layout_width="134dp"
+                android:layout_height="165dp"
+                android:clickable="true"
+                app:srcCompat="@drawable/beer" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/waterImageView"
+                android:layout_width="134dp"
+                android:layout_height="165dp"
+                android:clickable="true"
+                app:srcCompat="@drawable/water" />
+
+            <ImageView
+                android:id="@+id/colaImageView"
+                android:layout_width="134dp"
+                android:layout_height="165dp"
+                android:clickable="true"
+                app:srcCompat="@drawable/coca_cola" />
+
+            <ImageView
+                android:id="@+id/redBullImageView"
+                android:layout_width="134dp"
+                android:layout_height="165dp"
+                android:clickable="true"
+                app:srcCompat="@drawable/red_bull" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

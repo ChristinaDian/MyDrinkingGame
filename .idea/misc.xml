@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyDrinkingGame/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.22556894243641232" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyDrinkingGame/app/src/main/res/layout-w936dp/activity_login.xml" value="0.24795081967213115" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyDrinkingGame/app/src/main/res/layout/activity_add_challenge.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyDrinkingGame/app/src/main/res/layout/activity_card_game.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyDrinkingGame/app/src/main/res/layout/activity_choose_your_bottle.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyDrinkingGame/app/src/main/res/layout/activity_kings_cup.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyDrinkingGame/app/src/main/res/layout/activity_login.xml" value="0.328804347826087" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyDrinkingGame/app/src/main/res/layout/activity_main.xml" value="0.22282608695652173" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyDrinkingGame/app/src/main/res/layout/activity_menu.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyDrinkingGame/app/src/main/res/layout/activity_my_challanges.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyDrinkingGame/app/src/main/res/layout/activity_register.xml" value="0.32518115942028986" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyDrinkingGame/app/src/main/res/layout/activity_spin_the_bottle.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyDrinkingGame/app/src/main/res/layout/app_bar_main.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyDrinkingGame/app/src/main/res/layout/cards_list.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyDrinkingGame/app/src/main/res/layout/choose_bottle_menu.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyDrinkingGame/app/src/main/res/layout/content_main.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyDrinkingGame/app/src/main/res/layout/dialog.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyDrinkingGame/app/src/main/res/layout/fragment_home.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyDrinkingGame/app/src/main/res/layout/fragment_slideshow.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyDrinkingGame/app/src/main/res/layout/info_kings_cup.xml" value="0.33559782608695654" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyDrinkingGame/app/src/main/res/layout/nav_header_main.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyDrinkingGame/app/src/main/res/menu/activity_main_drawer.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyDrinkingGame/app/src/main/res/menu/choose_bottle_menu.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyDrinkingGame/app/src/main/res/menu/info_kings_cup.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyDrinkingGame/app/src/main/res/menu/main.xml" value="0.19114583333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
