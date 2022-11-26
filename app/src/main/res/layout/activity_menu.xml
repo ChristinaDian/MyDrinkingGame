@@ -43,10 +43,10 @@
         app:layout_constraintTop_toBottomOf="@+id/kingsCupButton" />
 
     <Button
-        android:id="@+id/spinTheWheelButton"
+        android:id="@+id/mapButton"
         android:layout_width="269dp"
         android:layout_height="88dp"
-        android:text="Spin the wheel"
+        android:text="SHOW BARS NEAR ME"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,9 +67,9 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Coming out soon :)"
+        android:text="More coming out soon :)"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/spinTheWheelButton"
-        app:layout_constraintStart_toStartOf="@+id/spinTheWheelButton" />
+        app:layout_constraintBottom_toTopOf="@+id/mapButton"
+        app:layout_constraintStart_toStartOf="@+id/mapButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

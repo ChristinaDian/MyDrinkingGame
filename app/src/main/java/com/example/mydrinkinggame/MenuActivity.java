@@ -1,17 +1,17 @@
 package com.example.mydrinkinggame;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class MenuActivity extends AppCompatActivity {
 
     Button cardGameB;
     Button spinBottleB;
-    Button spinWheelB;
+    Button mapB;
     Button kingsCupB;
     User user;
     public static SQLiteHelper db;
@@ -32,8 +32,8 @@ public class MenuActivity extends AppCompatActivity {
         spinBottleB=findViewById(R.id.spinTheBottleButton);
         spinBottleB.setOnClickListener(onClickListener);
 
-/*        spinWheelB=findViewById(R.id.spinTheWheelButton);
-        spinWheelB.setOnClickListener(onClickListener);*/
+        mapB =findViewById(R.id.mapButton);
+        mapB.setOnClickListener(onClickListener);
 
 
     }
@@ -51,9 +51,9 @@ public class MenuActivity extends AppCompatActivity {
                     case R.id.spinTheBottleButton:
                         intent = new Intent(MenuActivity.this, SpinTheBottle.class);
                         break;
-/*                    case R.id.spinTheWheelButton:
-                        intent = new Intent(MenuActivity.this, SpinTheWheeel.class);
-                        break;*/
+                    case R.id.mapButton:
+                        intent = new Intent(MenuActivity.this, MapsActivity.class);
+                        break;
                 }
                 startActivity(intent);
             }

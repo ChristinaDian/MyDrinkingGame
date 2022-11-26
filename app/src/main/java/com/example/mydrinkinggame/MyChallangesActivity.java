@@ -1,10 +1,5 @@
 package com.example.mydrinkinggame;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.DefaultItemAnimator;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.app.Dialog;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -15,12 +10,20 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import org.json.JSONObject;
+import org.json.JSONTokener;
+
 import java.util.ArrayList;
 
-public class MyChallangesActivity extends AppCompatActivity {
+public class MyChallangesActivity extends REST_API {
 
     ArrayList<String> arrayList;
     RecyclerView recyclerView;
@@ -52,6 +55,7 @@ public class MyChallangesActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
 
     }
+
     public void showDialog() {
         final EditText content;
         Button submit;
@@ -70,12 +74,54 @@ public class MyChallangesActivity extends AppCompatActivity {
         content = dialog.findViewById(R.id.content);
         submit = dialog.findViewById(R.id.submit);
 
-        submit.setOnClickListener(new View.OnClickListener() {;
+        submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (content.getText().toString().isEmpty()) {
                     content.setError("Please Enter your challenge");
                 }else {
+                    Thread t = new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            StringBuilder sb = new StringBuilder();
+                            sb.append("{");
+                           // sb.append(" \"id\":\" " + "\"52\"" + ",");
+                            sb.append("\"content\": \"" + content.getText().toString() + "\"");
+
+                            sb.append("}");
+                            final StringBuilder result = new StringBuilder();
+                            try {
+                                result.append(postData(
+                                        content.getText().toString()
+                                ));
+                                JSONObject jo = (JSONObject) new JSONTokener(
+                                        result.toString()
+                                ).nextValue();
+
+                                final String message = jo.getString("message");
+                                if(message == null){
+                                    throw new Exception("SEVER ERROR: " + result.toString());
+                                }
+                                runOnUiThread(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
+                                    }
+                                });
+                            } catch (final Exception e) {
+                                e.printStackTrace();
+                                runOnUiThread(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        Toast.makeText(getApplicationContext(), "ERROR: " + e.getMessage(),
+                                                Toast.LENGTH_SHORT).show();
+                                    }
+                                });
+                            }
+                        }
+                    });
+
+                    t.start();
                     db.insertCard(content.getText().toString());
                     dialog.cancel();
                     displayCards();
@@ -83,4 +129,5 @@ public class MyChallangesActivity extends AppCompatActivity {
             }
         });
     }
+
 }
